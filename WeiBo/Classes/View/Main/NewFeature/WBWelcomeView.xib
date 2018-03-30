@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="WBWelcomeView" customModule="WeiBo" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ad_background" translatesAutoresizingMaskIntoConstraints="NO" id="Eol-C2-4lE">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="avatar_default_big" translatesAutoresizingMaskIntoConstraints="NO" id="PFU-OL-ack">
+                    <rect key="frame" x="145" y="422" width="85" height="85"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="85" id="0Y8-Lu-SCB"/>
+                        <constraint firstAttribute="height" constant="85" id="utW-H8-qmq"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" alpha="0.0" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="欢迎归来" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Aea-SE-hN0">
+                    <rect key="frame" x="152" y="526" width="70" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Eol-C2-4lE" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="0B5-NK-TIR"/>
+                <constraint firstItem="PFU-OL-ack" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="A1P-Vv-mfR"/>
+                <constraint firstAttribute="bottom" secondItem="PFU-OL-ack" secondAttribute="bottom" constant="160" id="Axx-83-ldn"/>
+                <constraint firstItem="Eol-C2-4lE" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="GAu-M6-bKL"/>
+                <constraint firstItem="Aea-SE-hN0" firstAttribute="centerX" secondItem="PFU-OL-ack" secondAttribute="centerX" id="Izr-2m-N4b"/>
+                <constraint firstAttribute="trailing" secondItem="Eol-C2-4lE" secondAttribute="trailing" id="dXi-fY-b5L"/>
+                <constraint firstAttribute="bottom" secondItem="Eol-C2-4lE" secondAttribute="bottom" id="sLM-D6-7gI"/>
+                <constraint firstItem="Aea-SE-hN0" firstAttribute="top" secondItem="PFU-OL-ack" secondAttribute="bottom" constant="19" id="zVA-Y9-KKF"/>
+            </constraints>
+            <connections>
+                <outlet property="bottomCons" destination="Axx-83-ldn" id="5dQ-KZ-9iQ"/>
+                <outlet property="iconView" destination="PFU-OL-ack" id="kY5-tO-AuY"/>
+                <outlet property="tipLabel" destination="Aea-SE-hN0" id="ZTY-Ta-LqC"/>
+            </connections>
+            <point key="canvasLocation" x="34.5" y="53.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="ad_background" width="375" height="667"/>
+        <image name="avatar_default_big" width="85" height="85"/>
+    </resources>
+</document>
