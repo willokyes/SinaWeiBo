@@ -120,8 +120,8 @@ extension WBBaseViewController {
         navigationBar.tintColor = UIColor.orange
         
         //
-        navItem.leftBarButtonItem = nil
-        navItem.rightBarButtonItem = nil
+        //navItem.leftBarButtonItem = nil
+        //navItem.rightBarButtonItem = nil
         
         //print(Unmanaged.passUnretained(navigationBar).toOpaque())
         //print(Unmanaged.passUnretained((navigationController?.navigationBar)!).toOpaque())

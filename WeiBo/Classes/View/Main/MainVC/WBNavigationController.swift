@@ -25,9 +25,7 @@ class WBNavigationController: UINavigationController {
                 if childViewControllers.count == 1 {
                     title = childViewControllers.first?.title ?? title
                 }
-                
-                _ = vc.view
-                
+                                
                 vc.navItem.leftBarButtonItem = UIBarButtonItem(title: title, target: self, action: #selector(popToParent), isBack: true)
             }
         }
